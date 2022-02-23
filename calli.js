@@ -37,7 +37,7 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "s!";
+const prefix = ">";
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
@@ -57,7 +57,7 @@ calli.on("message", message => {
       .setImage(`https://media.discordapp.net/attachments/829751738717306920/835146132023279616/image0.png`)
       .setDescription(`
 👑 OwnerCode 
-(Calli#0001,AMxSakran^#3799)
+(Yawar)
 🤖 Securitybots 
 (Anti Vandalism#6064)
       `)
@@ -66,7 +66,7 @@ calli.on("message", message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.login("")
+calli.login("OTQwNTM5Nzk3MDM3MDAyNzcy.YgI38Q.YfENvNyYWU9LITZzgrqZvNxTxw8")
 ///////////////////////////////////////////////////////////////////////////////
 const callienabled  = "";
 const callidisabled = "";
@@ -80,12 +80,12 @@ const calliwarn     = "";                                                       
 calli.on("ready", () => {
   console.log(`${calli.user.tag}`);
   calli.user.setActivity(`${prefix}help`, {
-    Type: "Playing"
+    Type: <"
   });
 });
 ///////////////////////////////////////////////////////////////////////////////
 calli.on("message", async message => {
-  if (message.content.startsWith(prefix + "help")) {
+  if (message.content.startsWith(prefix + "<help")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
         m.delete({ timeout: cdtime * 600 });
