@@ -66,7 +66,7 @@ calli.on("message", message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.login("")
+calli.login("OTQwNTM5Nzk3MDM3MDAyNzcy.YgI38Q.BXbK7Z8tBeWt-I6Pof2L82NCQgI")
 ///////////////////////////////////////////////////////////////////////////////
 const callienabled  = "";
 const callidisabled = "";
@@ -85,7 +85,7 @@ calli.on("ready", () => {
 });
 ///////////////////////////////////////////////////////////////////////////////
 calli.on("message", async message => {
-  if (message.content.startsWith(prefix + "help")) {
+  if (message.content.startsWith(prefix m! "help")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
         m.delete({ timeout: cdtime * 600 });
